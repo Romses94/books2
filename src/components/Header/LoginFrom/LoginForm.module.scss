@@ -1,0 +1,72 @@
+@import '@/styles/mixinsAndVariables.scss';
+.loginForm {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 240px;
+  right: 0;
+  padding: 17px 15px 35px 15px;
+
+  h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    color: $textColorHighlight;
+    text-align: center;
+  }
+
+  label {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    border: 1px solid #4c3db2;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    color: #4c3db2;
+
+    &::placeholder {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 12px;
+      color: #4d3db2b4;
+    }
+  }
+  .error {
+    border-color: #ff353a;
+    color: #ff353a;
+    &::placeholder {
+      color: #ff353a;
+    }
+  }
+
+  button {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #9e98dc;
+    padding: 8px 79px;
+    margin-top: 50px;
+  }
+
+  .errorText {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 8px;
+    color: #ff353a;
+    margin-top: 10px;
+  }
+}

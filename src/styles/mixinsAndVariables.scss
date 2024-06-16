@@ -1,0 +1,7 @@
+$textColor: #5c6a79;
+$textColorHighlight: #1c2a39;
+@mixin container {
+  margin: 0px auto;
+  max-width: 1160px;
+  padding: 0 20px;
+}

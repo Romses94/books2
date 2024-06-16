@@ -1,0 +1,248 @@
+@import '../../../styles/mixinsAndVariables.scss';
+.book {
+  display: flex;
+  align-items: center;
+  max-height: 300px;
+  .cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 212px;
+    height: 300px;
+
+    box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
+  }
+  .descr {
+    max-width: 180px;
+    margin-left: 36px;
+
+    .author {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 10px;
+
+      text-transform: capitalize;
+      color: $textColor;
+
+      margin-bottom: 4px;
+    }
+
+    .title {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 16px;
+
+      color: $textColorHighlight;
+
+      margin-bottom: 4px;
+    }
+
+    .text {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 10px;
+      text-transform: capitalize;
+      line-height: 14px;
+
+      color: textColor;
+    }
+
+    .rate {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      span {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 13px;
+        color: $textColor;
+        margin-left: 6px;
+      }
+    }
+
+    .price {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+
+      color: $textColorHighlight;
+
+      margin: 16px 0;
+    }
+
+    .buyBtn {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 8px;
+      text-transform: uppercase;
+      color: #4c3db2;
+      padding: 17px 50px;
+      border: 1px solid #4c3db2;
+      transition: color ease-in-out 0.2s, background-color ease-in-out 0.2s;
+      &:hover {
+        color: #fff;
+        background-color: #4c3db2;
+        transition: color ease-in-out 0.2s, background-color ease-in-out 0.2s;
+      }
+      &-inCart {
+        border-color: #eeedf5;
+        color: #5c6a79;
+        &:hover {
+          color: #5c6a79;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .book {
+    .descr {
+      .buyBtn {
+        padding: 17px 50px;
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .book {
+    .cover {
+      transform: scale(0.8);
+    }
+
+    .descr {
+      margin-left: 25px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .book {
+    .descr {
+      margin-left: 15px;
+    }
+  }
+}
+@media (max-width: 950px) {
+}
+.book {
+  .descr {
+    .buyBtn {
+      padding: 17px 40px;
+    }
+  }
+}
+@media (max-width: 890px) {
+  .book {
+    .cover {
+      min-width: 212px;
+      height: 300px;
+    }
+    .descr {
+      margin-left: 36px;
+      .buyBtn {
+        padding: 17px 66px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .book {
+    .cover {
+      min-width: calc(212px * 0.8);
+      height: calc(300px * 0.8);
+    }
+    .descr {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .book {
+    .descr {
+      .buyBtn {
+        padding: 17px 40px;
+      }
+    }
+  }
+}
+@media (max-width: 470px) {
+  .book {
+    .descr {
+      .title {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .book {
+    .descr {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .book {
+    .descr {
+      max-width: 140px;
+      .buyBtn {
+        padding: 13px 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .book {
+    .cover {
+      min-width: calc(212px * 0.8);
+      height: calc(300px * 0.8);
+    }
+    .descr {
+      max-width: 140px;
+      .rate {
+        margin-bottom: 10px;
+        span {
+          margin: 0;
+        }
+      }
+      .buyBtn {
+        padding: 10px 25px;
+      }
+      .price {
+        font-size: 12px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .books__item {
+    .cover {
+      min-width: calc(212px * 0.7);
+      height: calc(300px * 0.7);
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .book {
+    .descr {
+      .rate {
+        margin-bottom: 3px;
+      }
+      .price {
+        font-size: 11px;
+        margin: 3px 0;
+      }
+    }
+  }
+}
